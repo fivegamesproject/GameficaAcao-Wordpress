@@ -151,19 +151,14 @@ p {
 
 
 
-
-    <script src="<?php echo esc_url( get_template_directory_uri() . '/assets/js/jquery.js');?>"  type="text/javascript" charset="utf-8"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri() . '/assets/js/levels.js');?>"  type="text/javascript" charset="utf-8"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri() . '/assets/js/restaurant.js');?>"  type="text/javascript" charset="utf-8"></script>
-    <script src="<?php echo esc_url(get_template_directory_uri() . '/assets/js/jquery.mCustomScrollbar.min.js');?>"></script>
+	   
     <link href='https://fonts.googleapis.com/css?family=Exo+2:200,400,600,400italic,600italic' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory() . '/assets/css/jquery.mCustomScrollbar.css');?>" type="text/css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="<?php echo esc_url(get_template_directory() . '/assets/css/style.css');?>" type="text/css" media="screen" title="no title" charset="utf-8">
 
+ 
 
 
 <?php
-
+wp_enqueue_scripts();
 // get_footer();
 ?>

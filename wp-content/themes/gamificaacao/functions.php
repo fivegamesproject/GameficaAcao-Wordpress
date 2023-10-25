@@ -637,6 +637,23 @@ function twentytwentyone_add_ie_class() {
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
 
+
+function files() {
+	wp_enqueue_style( 
+		get_theme_file_uri( '/assets/css/jquery.mCustomScrollbar.css' ),
+		get_theme_file_uri( '/assets/css/style.css' )
+	);
+
+	wp_enqueue_script( 
+		get_theme_file_uri( '/assets/js/jquery.js' ),
+		get_theme_file_uri( '/assets/js/levels.js' ),
+		get_theme_file_uri( '/assets/js/restaurant.js' ),
+		get_theme_file_uri( '/assets/js/jquery.mCustomScrollbar.min.js' )
+	);
+} 
+add_action( 'wp_enqueue_scripts', 'files' );
+
+
 if ( ! function_exists( 'wp_get_list_item_separator' ) ) :
 	/**
 	 * Retrieves the list item separator based on the locale.
